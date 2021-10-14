@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Game {
 	static Scanner in = new Scanner(System.in);
 	public static void main(String[] args) {
-		File score = new File("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+		File score = new File(".\\src\\main\\score.txt");
 		FileReader fr;
 		try {
 			fr = new FileReader(score);
@@ -32,7 +32,7 @@ public class Game {
 			if (arr[0][0] == "X" && arr[0][1] == "X" && arr[0][2] == "X") {
 				System.out.println("Ви перемогли!");
 				wins = wins + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -40,7 +40,7 @@ public class Game {
 			} else if (arr[1][0] == "X" && arr[1][1] == "X" && arr[1][2] == "X") {
 				System.out.println("Ви перемогли!");
 				wins = wins + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -48,7 +48,7 @@ public class Game {
 			} else if (arr[2][0] == "X" && arr[2][1] == "X" && arr[2][2] == "X") {
 				System.out.println("Ви перемогли!");
 				wins = wins + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -56,7 +56,7 @@ public class Game {
 			} else if (arr[0][0] == "X" && arr[1][0] == "X" && arr[2][0] == "X") {
 				System.out.println("Ви перемогли!");
 				wins = wins + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -64,7 +64,7 @@ public class Game {
 			} else if (arr[0][1] == "X" && arr[1][1] == "X" && arr[2][1] == "X") {
 				System.out.println("Ви перемогли!");
 				wins = wins + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -72,14 +72,14 @@ public class Game {
 			} else if (arr[0][2] == "X" && arr[1][2] == "X" && arr[2][2] == "X") {
 				System.out.println("Ви перемогли!");
 				wins = wins + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
 			} else if (arr[0][0] == "X" && arr[1][1] == "X" && arr[2][2] == "X") {
 				System.out.println("Ви перемогли!");
 				wins = wins + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -87,7 +87,7 @@ public class Game {
 			} else if (arr[0][2] == "X" && arr[1][1] == "X" && arr[2][0] == "X") {
 				System.out.println("Ви перемогли!");
 				wins = wins + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -96,7 +96,7 @@ public class Game {
 			if (arr[0][0] == "O" && arr[0][1] == "O" && arr[0][2] == "O") {
 				System.out.println("Бот переміг!");
 				loses = loses + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -104,7 +104,7 @@ public class Game {
 			} else if (arr[1][0] == "O" && arr[1][1] == "O" && arr[1][2] == "O") {
 				System.out.println("Бот переміг!");
 				loses = loses + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -112,7 +112,7 @@ public class Game {
 			} else if (arr[2][0] == "O" && arr[2][1] == "O" && arr[2][2] == "O") {
 				System.out.println("Бот переміг!");
 				loses = loses + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -120,7 +120,7 @@ public class Game {
 			} else if (arr[0][0] == "O" && arr[1][0] == "O" && arr[2][0] == "O") {
 				System.out.println("Бот переміг!");
 				loses = loses + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -128,7 +128,7 @@ public class Game {
 			} else if (arr[0][1] == "O" && arr[1][1] == "O" && arr[2][1] == "O") {
 				System.out.println("Бот переміг!");
 				loses = loses + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -136,7 +136,7 @@ public class Game {
 			} else if (arr[0][2] == "O" && arr[1][2] == "O" && arr[2][2] == "O") {
 				System.out.println("Бот переміг!");
 				loses = loses + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -144,7 +144,7 @@ public class Game {
 			} else if (arr[0][0] == "O" && arr[1][1] == "O" && arr[2][2] == "O") {
 				System.out.println("Бот переміг!");
 				loses = loses + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
@@ -152,7 +152,7 @@ public class Game {
 			} else if (arr[0][2] == "O" && arr[1][1] == "O" && arr[2][0] == "O") {
 				System.out.println("Бот переміг!");
 				loses = loses + 1;
-				write =  new FileWriter("C:\\Users\\Home\\eclipse-workspace\\Krestiki-noliki_2-0\\src\\main\\score.txt");
+				write =  new FileWriter(".\\src\\main\\score.txt");
 				write.write("Результати: \n Бот: \n" + loses + "\n гравець: \n" + wins + "\n ок");
 				write.flush();
 				write.close();
